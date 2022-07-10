@@ -1,0 +1,74 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Movies - Isaac Gallegos</title>
+    <script src="https://kit.fontawesome.com/a2cc4a6c09.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <button class="btn btn-previous" title="Previous" onclick="previous()"><i class="fas fa-chevron-left"></i></button>
+        <button class="btn btn-next" title="Next" onclick="next()"><i class="fas fa-chevron-right"></i></button>
+        <div class="movie" id="movie">
+            <h1 id="title"></h1>
+            <div class="cover" id="image-container">
+                <img id="image" src="" alt="Cover Movie">
+                <div class="synopsis">
+                    <p id="synopsis"></p>
+                </div>
+            </div>
+            <div class="movie-info" id="movieInfo">
+                <div class="info">
+                    <div class="area">
+                        <p>Release date&nbsp;&nbsp;</p>
+                    </div>
+                    <div class="data">
+                        <ul>
+                            <li id="release_date"><i class="fas fa-ticket-alt"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="area">
+                        <p>Main actors&nbsp;&nbsp;</p>
+                    </div>
+                    <div class="data">
+                        <ul>
+                            <li id="actors"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="area">
+                        <p>Raiting&nbsp;&nbsp;</p>
+                    </div>
+                    <div class="data">
+                        <ul>
+                            <li id="raiting"><i class="fas fa-star"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="area">
+                        <p>Geners&nbsp;&nbsp;</p>
+                    </div>
+                    <div class="data">
+                        <ul>
+                            <li id="genere"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button class="show-info" id="show_hidde" onclick="showInfo()" title="See More"><i class="fas fa-chevron-down" id="arrow"></i></button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="assets/js/movies.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>
